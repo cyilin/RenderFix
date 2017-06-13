@@ -1,0 +1,26 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven {
+        name = 'minecraft'
+        url = 'https://libraries.minecraft.net/'
+    }
+}
+
+version = "0.1"
+group = "renderfix"
+
+jar {
+    manifest {
+        attributes("TweakClass": "renderfix.ClassTweaker")
+    }
+}
+
+dependencies {
+    compile 'net.minecraft:launchwrapper:1.12'
+}
