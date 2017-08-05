@@ -26,7 +26,7 @@ public class ObfNames {
             EntityRenderer = "buo";
             EntityLivingBase = "vn";
             EnchantmentHelper = "alk";
-        } else if (MC_VERSION.equals("17w31a")) {
+        } else if (MC_VERSION.equals("17w31a") || MC_VERSION.equals("1.12.1-pre1") || MC_VERSION.equals("1.12.1")) {
             ParticleManager = "btg";
             EntityRenderer = "buq";
             EntityLivingBase = "vp";
