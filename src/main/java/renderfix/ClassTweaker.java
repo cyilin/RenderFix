@@ -29,9 +29,9 @@ public class ClassTweaker implements ITweaker {
         tweakClasses = (List<String>) Launch.blackboard.get("TweakClasses");
         tweaks = (List<String>) Launch.blackboard.get("Tweaks");
         for (String s : tweakClasses) {
-            if (s.equals("net.minecraftforge.fml.common.launcher.TerminalTweaker")) {
+            if (s.contains("net.minecraftforge.")) {
                 hasForge = true;
-            } else if (s.equals("org.spongepowered.asm.launch.MixinTweaker") || s.equals("org.spongepowered.asm.mixin.MixinEnvironment$EnvironmentStateTweaker")) {
+            } else if (s.contains("org.spongepowered.") || s.contains("com.mumfrey.liteloader.")) {
                 hasLiteLoader = true;
             }
         }
