@@ -66,6 +66,11 @@ public class ObfNames {
             EntityRenderer = "bzx";
             EntityLivingBase = "zp";
             EnchantmentHelper = "app";
+        } else if (MC_VERSION.equals("18w01a")) {
+            ParticleManager = "bzh";
+            EntityRenderer = "cao";
+            EntityLivingBase = "aam";
+            EnchantmentHelper = "aqm";
         }
     }
 
